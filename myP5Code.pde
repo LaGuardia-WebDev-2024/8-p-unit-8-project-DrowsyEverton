@@ -4,6 +4,7 @@ setup = function() {
     background(255,255,255,0);
     // count sheep 
     drawSheep(32,300, color(0,0,0));
+    drawChild()
    
    
 };
