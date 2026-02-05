@@ -3,12 +3,11 @@ setup = function() {
     size(600, 400);
     background(255,255,255,0);
     // count sheep 
-    drawSheep(32,300, color(0,0,0));
-    drawChild()
-   
-   
+    drawSheep(32,300, color(1,0,200));
+    drawChild (32,32)
 };
 
+   
 //🟢draw Function - will run on repeat
 draw = function(){
 
@@ -29,14 +28,16 @@ var drawFish = function(fishX, fishY, fishColor){
 // sleep peep sheep
 var drawSheep = function (sheepX, sheepY, sheepColor){
 textSize(45);
-fill (45,0,75)
-text ("₍ᐢ. .ᐢ₎", sheepX, sheepY )
-
-var Drawchild = function (childX,childY)
- noStroke(); 
-  fill (153, 103, 40);
-  ellipse ( child X, child Y, 45,30); // head
+fill (95,0,200);
+text ("₍ᐢ. .ᐢ₎", sheepX, sheepY, sheepColor);
 }
+
+//go to sleep 
+var drawChild = function( ChildX, ChildY ){
+textSize(34);
+text (😴, ChildX, ChildY);
+}
+
 
 
 
